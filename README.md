@@ -42,3 +42,5 @@ o	Database to save articles and users
 Julius – github account, template for home/search page, logo, name (fun name)
 Ben – proposal
 yanijq714@gmail.com
+
+For each story -> title, author, pages/chapters, genre
