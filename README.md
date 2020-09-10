@@ -38,9 +38,5 @@ o	Story creator – put title, genre, content – “word processor” with subm
 •	PHP/MySQL Back end
 o	Database to save articles and users
 	Include analytics
-1 week goal – 1/12th 
-Julius – github account, template for home/search page, logo, name (fun name)
-Ben – proposal
-yanijq714@gmail.com
 
 For each story -> title, author, pages/chapters, genre
