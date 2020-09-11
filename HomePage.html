@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+        <title>Regale</title>
+        <style type="text/css">
+            body {
+                text-align: center;
+                font-family: 'MedievalSharp', cursive;
+            }
+            
+            #logo {
+                height:300px;
+                width:600px;
+            }
+            
+            body h1{
+                color:brown;
+                font-size:50px;
+                border-style:double;
+                border-color:brown;
+            }
+            
+            #subTitle{
+                font-size:35px;
+                color:chocolate;
+            }
+            
+            section{
+                font-size:20px;
+                color:crimson
+            }
+        </style>
+    </head>
+    
+    <body>
+        <form autocomplete="on" action="" method="post">
+        <img src="Regale%20Mascot.jpeg" id="logo" alt="Derlin the Wizard">
+        <h1>Regale</h1>
+        <p id="subTitle">Let us whisk you away to another realm through a wonderous tale</p>
+            
+        <section id="theSearchFeature">
+            <p><label for="typeOfSearch">What are you looking for:</label>
+                <input list="searchTypes" id="searchType" name="searchType" required>
+                <datalist id="searchTypes">
+                    <option value="Title"></option>
+                    <option value="Author"></option>
+                    <option value="Keyword"></option>
+                </datalist>
+            </p>
+            
+            <p><label for="theGenre">What genre of literature are you looking for:</label>
+                <input list="genreTypes" id="genreType" name="genreType" required>
+                <datalist id="genreTypes">
+                    <option value="Action"></option>
+                    <option value="Adventure"></option>
+                    <option value="Romance"></option>
+                    <option value="Horror"></option>
+                    <option value="Sci-Fi"></option>
+                    <option value="Mystery"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </p>
+    
+            <p><label for="theSearch">Enter your search here:</label>
+                <input type="search" size=50>
+            </p>
+            <input type="submit" value="Let's Go ------->" formnovalidate>
+        </section>
+        </form>
+    </body>
+</html>
