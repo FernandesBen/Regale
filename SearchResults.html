@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <form method="POST" action="regale.com/storycreator/search">
+        <label for="search">Search: </label>
+        <input id="search" name="search" type="text">
+        <input type="submit" value="Search">
+    </form>
+    <div id="results">
+
+    </div>
+    <script>
+        var results = document.getElementById("results");
+        var searchResults = {
+            "one": {
+                "title":"Hello World",
+                "genre":"Sci-Fi",
+                "description":"crazy day ya know",
+                "story":"Every day I walk outside and see a giant alien ship. All I have to say is Hello World, look out for Tommy becuase he has a new pen today."},
+            "two": {
+                "title":"Not your average wizard",
+                "genre":"Medieval",
+                "description":"wizards have feelings too",
+                "story":"I construct amazing buildings with magic. A little thank you can go a long way, you know. It takes a lot of time to plan everything and get the paperwork approved by the local building officials. The building part is the easiest. Please next time you see the next wizard, give a little thank you."}
+            };
+        for (var key in searchResults) {
+            var title = document.createElement("h2");
+            title.innerHTML = searchResults[key]["title"]
+            results.appendChild(title);
+
+            var genre = document.createElement("p");
+            genre.innerHTML = "<b>Genre:</b> " + searchResults[key]["genre"]
+            results.appendChild(genre);
+
+            var description = document.createElement("p");
+            description.innerHTML = "<b>Description:</b> " + searchResults[key]["description"]
+            results.appendChild(description);
+
+            var story = document.createElement("p");
+            story.innerHTML = "<b>Story:</b> " + searchResults[key]["story"]
+            results.appendChild(story);
+        }        
+    </script>
+    <style>
+        body {
+            padding: 50px;
+        }
+        p {
+            margin-left: 40px;
+        }
+    </style>
+</body>
+</html>
