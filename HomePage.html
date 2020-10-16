@@ -18,10 +18,14 @@
             }
             
             body h1{
+                box-sizing:border-box;
+                width: 80%;
                 color:brown;
                 font-size:50px;
                 border-style:double;
                 border-color:brown;
+                margin-left:130px;
+                padding: 20px
             }
             
             #subTitle{
@@ -33,12 +37,24 @@
                 font-size:20px;
                 color:crimson
             }
+            
             body aside {
                 text-align: right;
                 margin-top: 20px;
                 margin-right: 30px;
             }
         </style>
+        <script type="text/javascript">
+            function Search(){
+                var searchType = document.getElementById("searchType").value;
+                var theGenre = document.getElementById("genreType").value;
+                var theSearch = document.getElementById("userSearch").value;
+                
+                document.getElementById("output").innerHTML = searchType+theGenre+theSearch;
+                //insert rest of how to do a search here
+                
+            }
+        </script>
     </head>
     
     <body>
@@ -71,9 +87,9 @@
             </p>
     
             <p><label for="theSearch">Enter your search here:</label>
-                <input type="search" size=50>
+                <input type="search" id="userSearch" size=50>
             </p>
-            <input type="submit" value="Let's Go ------->" formnovalidate>
+            <input type="submit" value="Let's Go ------->"  onclick="Search()">
         </section>
         <aside><a href="AboutPage.html">About this website</a></aside>
         </form>
