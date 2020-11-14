@@ -1,0 +1,31 @@
+            .info {
+                margin-right: 40px;
+            }
+            
+            .introStuff{
+                text-align: center;
+            }
+            
+            #theStory {
+                font-size: 20px;
+                margin-left: 40px;
+                margin-right: 40px;
+                margin-bottom: 50px;
+            }
+
+            #theStory h2 {
+                border-bottom: 1px solid black;
+            }
+            
+            #title{
+                font-size: 50px;
+                margin-left: 25px;
+            }
+            
+            #additionalInfo{
+                font-size: 18px;
+            }
+            
+            #authorLine:hover {
+                color: grey!important;
+            }
