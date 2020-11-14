@@ -1,0 +1,37 @@
+            body {
+                text-align: center;
+                font-family: 'MedievalSharp', cursive;
+            }
+            
+            #logo {
+                height:300px;
+                width:600px;
+                margin-left:75px;
+            }
+            
+            body h1{
+                box-sizing:border-box;
+                width: 80%;
+                color:brown;
+                font-size:50px;
+                border-style:double;
+                border-color:brown;
+                margin-left:130px;
+                padding: 20px
+            }
+            
+            #subTitle{
+                font-size:35px;
+                color:chocolate;
+            }
+            
+            section{
+                font-size:20px;
+                color:crimson
+            }
+            
+            body aside {
+                text-align: right;
+                margin-top: 20px;
+                margin-right: 30px;
+            }
