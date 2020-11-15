@@ -1,0 +1,15 @@
+body {
+    padding: 50px;
+    text-align: center;
+}
+
+div {
+    text-align: left;
+}
+p {
+    margin-left: 40px;
+}
+
+button {
+    all: unset;
+}

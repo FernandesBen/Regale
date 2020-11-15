@@ -1,0 +1,34 @@
+CREATE DATABASE regale;
+
+CREATE TABLE users(
+    user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    username VARCHAR(20),
+    user_password VARCHAR(15), 
+    email VARCHAR(30), 
+    description VARCHAR(60), 
+    date_joined DATE
+); 
+
+
+CREATE TABLE stories (
+    story_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    user_id INT, 
+    title VARCHAR(50), 
+    genre VARCHAR(30), 
+    description TINYTEXT,
+    content LONGTEXT,
+    date_created DATE, 
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
+
+INSERT INTO users(username, user_password, email, description, date_joined) VALUES ("shakespeare","Romeo&Juliet1","shakespeare@gmail.com", "Playwright who can throw a pun or two. Proud father of 3 children.","2020-11-01");
+
+INSERT INTO stories(user_id, title, genre, description, content, date_created) VALUES ((SELECT user_id FROM users WHERE username='shakespeare'),"Why the Number 498 Saved Me", "Horror", "Short story about a fictional event that saved my life.", "Every day after school, I would take 498 steps to my house. It was the most efficient way I reached my home. It took me over a year to whittle down the number. Back when I was at 539 steps, I encountered a ghost when walking home. The ghost scared me as I was just trying to get home. Upon realizing what I got myself into, I decided to walk away. I was scared like never before. I kept counting the steps to try and forget the ghost. Somehow, the adrenaline enable me to reach my home in 498 steps. Now, every day when I come home for school, I frighten myself so I can make it home quick. I just recall the image of the ghost and float like a bumblebee all the way home.", NOW());
+
+INSERT INTO stories(user_id, title, genre, description, content, date_created) VALUES ((SELECT user_id FROM users WHERE username='shakespeare'),"Hello World", "Horror", "Crazy day ya know", "Every day I walk outside and see a giant alien ship. All I have to say is Hello World, look out for Tommy becuase he has a new pen today.","2020-11-07");
+
+INSERT INTO stories(user_id, title, genre, description, content, date_created) VALUES ((SELECT user_id FROM users WHERE username='shakespeare'), "Not your average wizard", "Action", "Wizards have feelings too", "I construct amazing buildings with magic. A little thank you can go a long way, you know. It takes a lot of time to plan everything and get the paperwork approved by the local building officials. The building part is the easiest. Please next time you see the next wizard, give a little thank you.","2020-11-05");
+
+UPDATE stories SET genre="Mystery" WHERE story_id=1;
+DELETE FROM stories WHERE story_id=1;
