@@ -1,0 +1,39 @@
+#logo {
+    height:300px;
+    width:600px;
+    margin-left: 75px;
+}
+
+body h1{
+    box-sizing:border-box;
+    width: 80%;
+    color:brown;
+    font-size:50px;
+    border-style:double;
+    border-color:brown;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#subTitle{
+    font-size:35px;
+    color:chocolate;
+}
+
+section{
+    font-size:20px;
+    color:crimson;
+}
+
+input[type="text"], .login input[type="password"], textarea {
+    border: 0;
+    background: none;
+    margin: 5px 5px;
+    border: 2px solid chocolate;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
