@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.content {
+    padding: 0 10%;
+}
+
+header {
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid brown;
+    background-color: #ffede9;
+    margin-bottom: 40px;
+}
+
+.logo {
+    cursor: pointer;
+    height: 80px;
+    margin-left: 20px
+}
+
+.nav_links {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+.nav_links li:hover {
+    border-bottom: solid chocolate; 
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: brown;
+}
+
+
+input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid brown;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: brown;
+}
+
+p {
+    margin: 20px 20px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
